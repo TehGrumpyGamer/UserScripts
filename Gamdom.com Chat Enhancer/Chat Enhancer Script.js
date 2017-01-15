@@ -9,8 +9,8 @@
 // @license      GNU GPLv3
 // @homepage     https://github.com/TehGrumpyGamer/UserScripts/tree/master/Gamdom.com%20Chat%20Enhancer#readme
 // @homepageURL  https://github.com/TehGrumpyGamer/UserScripts/tree/master/Gamdom.com%20Chat%20Enhancer#readme
-// @downloadURL  https://github.com/TehGrumpyGamer/UserScripts/blob/master/Gamdom.com%20Chat%20Enhancer/Chat%20Enhancer%20Script.js
-// @updateURL    https://github.com/TehGrumpyGamer/UserScripts/blob/master/Gamdom.com%20Chat%20Enhancer/Chat%20Enhancer%20Script.js
+// @downloadURL  https://github.com/TehGrumpyGamer/UserScripts/raw/master/Gamdom.com%20Chat%20Enhancer/Chat%20Enhancer%20Script.js
+// @updateURL    https://github.com/TehGrumpyGamer/UserScripts/raw/master/Gamdom.com%20Chat%20Enhancer/Chat%20Enhancer%20Script.js
 // @supportURL   https://github.com/TehGrumpyGamer/UserScripts/issues
 // @match        *://gamdom.com/
 // @exclude      *://gamdom.com/fa*
@@ -24,6 +24,9 @@
 // @run-at       document-end
 // @require      http://code.jquery.com/jquery-latest.js
 // @require      https://raw.githubusercontent.com/bartaz/sandbox.js/master/jquery.highlight.js
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @noframes
 // ==/UserScript==
 
 (function () {
