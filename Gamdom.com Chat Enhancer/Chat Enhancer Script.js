@@ -9,6 +9,9 @@
 // @license      GNU GPLv3
 // @homepage     https://github.com/TehGrumpyGamer/UserScripts/tree/master/Gamdom.com%20Chat%20Enhancer#readme
 // @homepageURL  https://github.com/TehGrumpyGamer/UserScripts/tree/master/Gamdom.com%20Chat%20Enhancer#readme
+// @downloadURL  https://github.com/TehGrumpyGamer/UserScripts/blob/master/Gamdom.com%20Chat%20Enhancer/Chat%20Enhancer%20Script.js
+// @updateURL    https://github.com/TehGrumpyGamer/UserScripts/blob/master/Gamdom.com%20Chat%20Enhancer/Chat%20Enhancer%20Script.js
+// @supportURL   https://github.com/TehGrumpyGamer/UserScripts/issues
 // @match        *://gamdom.com/
 // @exclude      *://gamdom.com/fa*
 // @exclude      *://gamdom.com/support*
@@ -22,3 +25,15 @@
 // @require      http://code.jquery.com/jquery-latest.js
 // @require      https://raw.githubusercontent.com/bartaz/sandbox.js/master/jquery.highlight.js
 // ==/UserScript==
+
+(function () {
+	'use strict';
+
+	String.format = function (string) {
+		var args = Array.prototype.slice.call(arguments, 1, arguments.length);
+		return string.replace(/{(\d+)}/g, function (match, number) {
+			return typeof args[number] !== "undefined" ? args[number] : match;
+		});
+	};
+
+})();
